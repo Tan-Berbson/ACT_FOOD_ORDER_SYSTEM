@@ -16,5 +16,12 @@ namespace ACT_FOOD_ORDER
         {
             InitializeComponent();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            frm_dashboard f = new frm_dashboard();
+            f.Show();
+            this.Hide();
+        }
     }
 }
