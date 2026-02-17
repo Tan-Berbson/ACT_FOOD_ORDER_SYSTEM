@@ -23,5 +23,10 @@ namespace ACT_FOOD_ORDER
             f.Show();
             this.Hide();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

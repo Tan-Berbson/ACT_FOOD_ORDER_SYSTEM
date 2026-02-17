@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value>The system allows customers to place food orders and helps restaurant staff track 
+and prepare them.  It reduces errors, speeds up service, and makes ordering easier
+ for both customers and businesses.</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Name: Berbson Indolos Tan
+Age: 19 years old
+Educational Background: Asian College of Technology
+Current Level: 1st Year College Student
+Course: BS Information Technology (BS IT)
+Development Timeline: Developed during 1st Year of College</value>
+  </data>
 </root>
