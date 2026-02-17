@@ -49,16 +49,33 @@
             txt_customername = new TextBox();
             txt_total = new TextBox();
             panel10 = new Panel();
+            label4 = new Label();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
+            label3 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel5.SuspendLayout();
             panel3.SuspendLayout();
+            panel6.SuspendLayout();
             panel4.SuspendLayout();
             panel7.SuspendLayout();
+            panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Red;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label4);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(507, 57);
@@ -87,6 +104,7 @@
             // panel5
             // 
             panel5.BackColor = Color.Red;
+            panel5.Controls.Add(label2);
             panel5.Location = new Point(3, 3);
             panel5.Name = "panel5";
             panel5.Size = new Size(504, 28);
@@ -105,7 +123,7 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(126, 71);
+            radioButton2.Location = new Point(28, 85);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(94, 19);
             radioButton2.TabIndex = 2;
@@ -116,7 +134,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(26, 71);
+            radioButton1.Location = new Point(28, 49);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(94, 19);
             radioButton1.TabIndex = 1;
@@ -127,6 +145,7 @@
             // panel6
             // 
             panel6.BackColor = Color.Red;
+            panel6.Controls.Add(label1);
             panel6.Location = new Point(3, 1);
             panel6.Name = "panel6";
             panel6.Size = new Size(246, 28);
@@ -134,7 +153,7 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.Red;
+            panel4.BackColor = SystemColors.Control;
             panel4.Controls.Add(btn_back);
             panel4.Controls.Add(btn_confirm);
             panel4.Location = new Point(0, 769);
@@ -144,21 +163,27 @@
             // 
             // btn_back
             // 
+            btn_back.BackColor = Color.Green;
+            btn_back.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btn_back.ForeColor = SystemColors.Control;
             btn_back.Location = new Point(2, 1);
             btn_back.Name = "btn_back";
             btn_back.Size = new Size(246, 49);
             btn_back.TabIndex = 2;
             btn_back.Text = "Back";
-            btn_back.UseVisualStyleBackColor = true;
+            btn_back.UseVisualStyleBackColor = false;
             // 
             // btn_confirm
             // 
+            btn_confirm.BackColor = Color.Red;
+            btn_confirm.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btn_confirm.ForeColor = SystemColors.Control;
             btn_confirm.Location = new Point(258, 2);
             btn_confirm.Name = "btn_confirm";
             btn_confirm.Size = new Size(246, 49);
             btn_confirm.TabIndex = 1;
             btn_confirm.Text = "Confirm";
-            btn_confirm.UseVisualStyleBackColor = true;
+            btn_confirm.UseVisualStyleBackColor = false;
             btn_confirm.Click += btn_confirm_Click;
             // 
             // panel7
@@ -175,7 +200,7 @@
             // radioButton5
             // 
             radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(76, 85);
+            radioButton5.Location = new Point(6, 85);
             radioButton5.Name = "radioButton5";
             radioButton5.Size = new Size(94, 19);
             radioButton5.TabIndex = 5;
@@ -186,7 +211,7 @@
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(137, 50);
+            radioButton4.Location = new Point(6, 60);
             radioButton4.Name = "radioButton4";
             radioButton4.Size = new Size(94, 19);
             radioButton4.TabIndex = 4;
@@ -197,7 +222,7 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(3, 50);
+            radioButton3.Location = new Point(6, 35);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(94, 19);
             radioButton3.TabIndex = 3;
@@ -208,6 +233,7 @@
             // panel8
             // 
             panel8.BackColor = Color.Red;
+            panel8.Controls.Add(label3);
             panel8.Location = new Point(3, 1);
             panel8.Name = "panel8";
             panel8.Size = new Size(246, 28);
@@ -215,6 +241,9 @@
             // 
             // panel9
             // 
+            panel9.Controls.Add(label8);
+            panel9.Controls.Add(label7);
+            panel9.Controls.Add(label6);
             panel9.Controls.Add(txt_Ordernumber);
             panel9.Controls.Add(txt_customername);
             panel9.Controls.Add(txt_total);
@@ -260,10 +289,107 @@
             // panel10
             // 
             panel10.BackColor = Color.Red;
+            panel10.Controls.Add(label5);
             panel10.Location = new Point(0, 595);
             panel10.Name = "panel10";
             panel10.Size = new Size(507, 28);
             panel10.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(126, 5);
+            label4.Name = "label4";
+            label4.Size = new Size(147, 47);
+            label4.TabIndex = 11;
+            label4.Text = "Jollibee";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(12, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(3, 1);
+            label2.Name = "label2";
+            label2.Size = new Size(155, 25);
+            label2.TabIndex = 13;
+            label2.Text = "Order Summary";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(3, 3);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 25);
+            label1.TabIndex = 14;
+            label1.Text = "Dine Type";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(3, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(165, 25);
+            label3.TabIndex = 15;
+            label3.Text = "Payment Method";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(0, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(210, 25);
+            label5.TabIndex = 16;
+            label5.Text = "Customer information";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label6.ForeColor = SystemColors.ActiveCaptionText;
+            label6.Location = new Point(6, 46);
+            label6.Name = "label6";
+            label6.Size = new Size(160, 25);
+            label6.TabIndex = 17;
+            label6.Text = "Customer Name:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label7.ForeColor = SystemColors.ActiveCaptionText;
+            label7.Location = new Point(12, 85);
+            label7.Name = "label7";
+            label7.Size = new Size(149, 25);
+            label7.TabIndex = 18;
+            label7.Text = "Order Number:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label8.ForeColor = SystemColors.ActiveCaptionText;
+            label8.Location = new Point(57, 126);
+            label8.Name = "label8";
+            label8.Size = new Size(104, 25);
+            label8.TabIndex = 19;
+            label8.Text = "Total Cost:";
             // 
             // frm_orderconfirmandpayment
             // 
@@ -280,14 +406,25 @@
             Name = "frm_orderconfirmandpayment";
             Text = "frm_orderconfirmandpayment";
             Load += frm_orderconfirmandpayment_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             panel4.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -314,5 +451,14 @@
         private Button btn_back;
         private Button btn_confirm;
         public ListView listView1;
+        private PictureBox pictureBox1;
+        private Label label4;
+        private Label label2;
+        private Label label1;
+        private Label label3;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
     }
 }
