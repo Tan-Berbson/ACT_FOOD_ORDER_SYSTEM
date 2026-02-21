@@ -34,37 +34,18 @@ namespace ACT_FOOD_ORDER
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            if (cmb_order.SelectedItem == null)
-            {
-                MessageBox.Show("Please select an order.");
-                return;
-            }
-
-            string order = cmb_order.SelectedItem.ToString();
+            
 
             int total = 100; // base price of item
 
             List<string> addons = new List<string>();
 
-            if (checkBox1.Checked)
-            {
-                addons.Add("Order1");
-                total += 20;
-            }
-
-            if (checkBox2.Checked)
-            {
-                addons.Add("Order2");
-                total += 20;
-            }
+            
 
             string checkboxes = string.Join(", ", addons);
 
-            ListViewItem ordersum = new ListViewItem(order);
-            ordersum.SubItems.Add(checkboxes);
-            ordersum.SubItems.Add("₱" + total.ToString());
-
-            listView1.Items.Add(ordersum);
+          
+           
 
             ComputeGrandTotal(); // update total textbox
         }
@@ -79,6 +60,7 @@ namespace ACT_FOOD_ORDER
             listView1.Columns.Add("Order", 130);
             listView1.Columns.Add("Add-ons", 130);
             listView1.Columns.Add("Total", 110);
+            
         }
         private void ComputeGrandTotal()
         {
@@ -112,6 +94,12 @@ namespace ACT_FOOD_ORDER
             frm_addorder f = new frm_addorder();
             f.ShowDialog();
             this.Hide();
+        }
+
+        private void txt_total_TextChanged(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
