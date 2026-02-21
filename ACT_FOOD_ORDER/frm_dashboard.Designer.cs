@@ -34,7 +34,6 @@
             panel14 = new Panel();
             textBox13 = new TextBox();
             label17 = new Label();
-            btn_logout = new Button();
             label4 = new Label();
             panel3 = new Panel();
             panel16 = new Panel();
@@ -109,6 +108,7 @@
             btn_confirm = new Button();
             panel9 = new Panel();
             label1 = new Label();
+            btn_logout = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel14.SuspendLayout();
@@ -185,19 +185,6 @@
             label17.Size = new Size(64, 20);
             label17.TabIndex = 6;
             label17.Text = "Cashier:";
-            // 
-            // btn_logout
-            // 
-            btn_logout.BackColor = Color.Red;
-            btn_logout.FlatStyle = FlatStyle.Popup;
-            btn_logout.ForeColor = Color.White;
-            btn_logout.Location = new Point(189, 3);
-            btn_logout.Name = "btn_logout";
-            btn_logout.Size = new Size(89, 32);
-            btn_logout.TabIndex = 5;
-            btn_logout.Text = "Log Out";
-            btn_logout.UseVisualStyleBackColor = false;
-            btn_logout.Click += btn_logout_Click;
             // 
             // label4
             // 
@@ -701,6 +688,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(15, 16);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(99, 75);
@@ -786,7 +774,7 @@
             panel5.Controls.Add(label3);
             panel5.Controls.Add(listView1);
             panel5.Controls.Add(txt_total);
-            panel5.Location = new Point(745, 122);
+            panel5.Location = new Point(742, 119);
             panel5.Name = "panel5";
             panel5.Size = new Size(403, 608);
             panel5.TabIndex = 0;
@@ -849,7 +837,7 @@
             panel11.BackColor = Color.WhiteSmoke;
             panel11.Controls.Add(btn_Clear);
             panel11.Controls.Add(label5);
-            panel11.Location = new Point(742, 78);
+            panel11.Location = new Point(742, 73);
             panel11.Name = "panel11";
             panel11.Size = new Size(401, 40);
             panel11.TabIndex = 2;
@@ -957,6 +945,19 @@
             label1.TabIndex = 11;
             label1.Text = "Main Order";
             // 
+            // btn_logout
+            // 
+            btn_logout.BackColor = Color.Red;
+            btn_logout.FlatStyle = FlatStyle.Popup;
+            btn_logout.ForeColor = Color.White;
+            btn_logout.Location = new Point(189, 3);
+            btn_logout.Name = "btn_logout";
+            btn_logout.Size = new Size(89, 32);
+            btn_logout.TabIndex = 5;
+            btn_logout.Text = "Log Out";
+            btn_logout.UseVisualStyleBackColor = false;
+            btn_logout.Click += btn_logout_Click;
+            // 
             // frm_dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1029,7 +1030,6 @@
         private Panel panel4;
         private Panel panel10;
         private Panel panel9;
-        private Button btn_logout;
         private Button btn_Clear;
         public ListView listView1;
         private Label label1;
@@ -1099,5 +1099,6 @@
         private Label label22;
         private TextBox textBox18;
         private PictureBox pictureBox12;
+        private Button btn_logout;
     }
 }

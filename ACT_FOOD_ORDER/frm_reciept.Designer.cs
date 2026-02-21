@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_reciept));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label4 = new Label();
@@ -51,22 +52,25 @@
             panel1.Controls.Add(label4);
             panel1.Location = new Point(2, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(278, 57);
+            panel1.Size = new Size(333, 57);
             panel1.TabIndex = 3;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(3, 4);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(10, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(97, 46);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Red;
             label4.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.Control;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(111, 4);
             label4.Name = "label4";
             label4.Size = new Size(147, 47);
@@ -77,26 +81,26 @@
             // 
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(listBox1);
-            panel2.Location = new Point(2, 63);
+            panel2.Location = new Point(27, 66);
             panel2.Name = "panel2";
-            panel2.Size = new Size(278, 541);
+            panel2.Size = new Size(278, 532);
             panel2.TabIndex = 0;
             // 
             // panel4
             // 
-            panel4.BackColor = Color.Red;
+            panel4.BackColor = Color.WhiteSmoke;
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(3, 0);
+            panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(272, 35);
+            panel4.Size = new Size(278, 35);
             panel4.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 17F, FontStyle.Bold);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(0, 4);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(3, 3);
             label1.Name = "label1";
             label1.Size = new Size(202, 31);
             label1.TabIndex = 12;
@@ -106,25 +110,26 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(0, 33);
+            listBox1.Location = new Point(0, 48);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(275, 499);
+            listBox1.Size = new Size(278, 484);
             listBox1.TabIndex = 0;
             // 
             // panel3
             // 
             panel3.Controls.Add(btn_confirm);
-            panel3.Location = new Point(2, 610);
+            panel3.Location = new Point(24, 604);
             panel3.Name = "panel3";
-            panel3.Size = new Size(278, 65);
+            panel3.Size = new Size(278, 74);
             panel3.TabIndex = 4;
             // 
             // btn_confirm
             // 
             btn_confirm.BackColor = Color.Green;
+            btn_confirm.FlatStyle = FlatStyle.Popup;
             btn_confirm.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_confirm.ForeColor = SystemColors.Control;
-            btn_confirm.Location = new Point(3, 3);
+            btn_confirm.Location = new Point(1, 6);
             btn_confirm.Name = "btn_confirm";
             btn_confirm.Size = new Size(275, 59);
             btn_confirm.TabIndex = 1;
@@ -136,11 +141,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 679);
+            BackColor = Color.White;
+            ClientSize = new Size(335, 679);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "frm_reciept";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frm_reciept";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
