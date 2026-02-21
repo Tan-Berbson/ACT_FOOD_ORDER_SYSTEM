@@ -12,9 +12,11 @@ namespace ACT_FOOD_ORDER
 {
     public partial class frm_orderconfirmandpayment : Form
     {
-        public frm_orderconfirmandpayment()
+        private string totals;
+        public frm_orderconfirmandpayment(string totals)
         {
             InitializeComponent();
+            txt_total.Text = totals;
         }
 
         private void frm_orderconfirmandpayment_Load(object sender, EventArgs e)
@@ -45,15 +47,18 @@ namespace ACT_FOOD_ORDER
                 paymentmethod = "PayMaya";
 
             frm_reciept receipt = new frm_reciept(
-      listView1.Items,
-      txt_customername.Text,
-      txt_Ordernumber.Text,
-      dinetype,
-      paymentmethod,
-      txt_total.Text
-  );
+                  listView1.Items,
+                  txt_customername.Text,
+                  txt_Ordernumber.Text,
+                  dinetype,
+                  paymentmethod,
+                  txt_total.Text
+                                      );
 
             receipt.Show();
+            this.Close();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
 
 
         }

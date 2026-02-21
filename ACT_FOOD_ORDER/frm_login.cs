@@ -42,6 +42,7 @@ namespace ACT_FOOD_ORDER
                 frm_dashboard f = new frm_dashboard();
                 f.Show();
                 this.Hide();
+                
             }
             else
             {

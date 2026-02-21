@@ -15,6 +15,7 @@ namespace ACT_FOOD_ORDER
         public frm_dashboard()
         {
             InitializeComponent();
+
         }
 
         private void btn_systeminfo_Click(object sender, EventArgs e)
@@ -94,7 +95,8 @@ namespace ACT_FOOD_ORDER
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
-            frm_orderconfirmandpayment f2 = new frm_orderconfirmandpayment();
+            string total = txt_total.Text;
+            frm_orderconfirmandpayment f2 = new frm_orderconfirmandpayment(total);
 
             foreach (ListViewItem item in listView1.Items)
             {
@@ -102,6 +104,13 @@ namespace ACT_FOOD_ORDER
             }
 
             f2.Show();
+            this.Hide();
+        }
+
+        private void btn_adds_Click(object sender, EventArgs e)
+        {
+            frm_addorder f = new frm_addorder();
+            f.ShowDialog();
             this.Hide();
         }
     }

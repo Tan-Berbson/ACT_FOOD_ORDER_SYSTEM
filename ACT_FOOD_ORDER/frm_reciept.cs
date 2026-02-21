@@ -47,5 +47,14 @@ namespace ACT_FOOD_ORDER
             listBox1.Items.Add("Thank you!");
 
         }
+
+        private void btn_confirm_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you for your order!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            frm_dashboard f = new frm_dashboard();
+            f.Show();
+            this.Close();
+
+        }
     }
 }
